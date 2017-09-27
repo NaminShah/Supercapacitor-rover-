@@ -1,53 +1,16 @@
 
 
 float startBval;
-
-
-
-
-
-
-
-
-
 float startVoltage = 0;
 
-
-
-
-
-
-
 const int enA = 10;
-
-
 const int in1 = 9;
-
-
 const int in2 = 8;
-
-
-
-
-
-
-
 const int enB = 5;
-
-
 const int in3 = 7;
-
-
 const int in4 = 6;
 
-
-
-
-
-
-
 float brightness;
-
 
 float PIF;
 
@@ -63,49 +26,12 @@ int frontPR = A0; // Front Photoresistor pin
 
 int backPR = A1; // Back Photoresistor pin
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Variables for Self-Learning
 
 
 float learn_rate = 0.0001;
 
-
-
-
-
-
-
-float karma[] = { 0.001, 0.001, 0.001, 0.001, 0.001, 0.001 };
-
-
-
-
-
+float karma[] = { 0.001, 0.001, 0.001, 0.001, 0.001, 0.001 }
 
 
 float Pred_Reward(float hold[]){
@@ -180,15 +106,6 @@ void Update_Karma(float y_actual, float y_pred, float hold[])
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
